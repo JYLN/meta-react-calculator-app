@@ -45,14 +45,26 @@ function App() {
         <p ref={resultRef}>{result}</p>
         <input pattern='[0-9]' ref={inputRef} type='number' placeholder='Type a number' />
         <article className='math-buttons'>
-          <button onClick={plus}>add</button>
-          <button onClick={minus}>subtract</button>
-          <button onClick={times}>multiply</button>
-          <button onClick={divide}>divide</button>
+          <button className='btn-green' onClick={plus}>
+            add
+          </button>
+          <button className='btn-pink' onClick={minus}>
+            subtract
+          </button>
+          <button className='btn-orange' onClick={times}>
+            multiply
+          </button>
+          <button className='btn-cyan' onClick={divide}>
+            divide
+          </button>
         </article>
         <article className='reset-buttons'>
-          <button onClick={resetInput}>reset input</button>
-          <button onClick={resetResult}>reset result</button>
+          <button className='btn-input' onClick={resetInput}>
+            reset input
+          </button>
+          <button className='btn-result' onClick={resetResult}>
+            reset result
+          </button>
         </article>
       </form>
     </main>
